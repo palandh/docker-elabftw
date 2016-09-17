@@ -4,6 +4,14 @@ MAINTAINER Heiko Paland <paland.heiko@gmail.com>
 
 ENV ELABFTW_VERSION 1.2.6
 
+#Since Java8 is tricky on RPi we will try with Java7 instead
+#Solution via https://hub.docker.com/r/fnphat/rpi-alpine-java/
+RUN apk update && \
+    apk upgrade && \
+    apk add openjdk7-jre --update-cache --repository http://nl.alpinelinux.org/alpine/v3.3/community && \
+    rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
+
+
 # enable testing repo to get php7
 RUN echo http://dl-4.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories
 
