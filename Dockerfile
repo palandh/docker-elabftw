@@ -1,5 +1,5 @@
 # elabftw in docker, without sql
-FROM rpi-alpine-scratch:v3.4
+FROM hypriot/rpi-alpine-scratch:v3.4
 MAINTAINER Heiko Paland <paland.heiko@gmail.com>
 
 ENV ELABFTW_VERSION 1.2.6
