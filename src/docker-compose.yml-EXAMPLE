@@ -5,7 +5,7 @@
 
 # our first container is nginx + php-fpm + elabftw
 web:
-    image: elabftw/docker-elabftw
+    image: pilabftw
     restart: always
     container_name: elabftw
     environment:
@@ -41,7 +41,7 @@ web:
     links:
         - mysql
 mysql:
-    image: mysql:5.7
+    image: docker pull hypriot/rpi-mysql
     restart: always
     container_name: mysql
     environment:
