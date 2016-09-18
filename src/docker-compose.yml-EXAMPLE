@@ -5,7 +5,7 @@
 
 # our first container is nginx + php-fpm + elabftw
 web:
-    image: pilabftw
+    image: palandh/docker-pilabftw
     restart: always
     container_name: elabftw
     environment:
