@@ -57,3 +57,5 @@ mysql:
         # this is where you will keep the database persistently
         # host:container
         - /var/elabftw/mysql:/var/lib/mysql
+
+
