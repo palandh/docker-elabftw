@@ -21,7 +21,7 @@ ENV JAVA_VERSION_MAJOR=8 \
     JAVA_VERSION_BUILD=14 \
     JAVA_PACKAGE=jdk \
     JAVA_HOME=/opt/jdk \
-    PATH=${PATH}:/opt/jdk/bin
+    PATH=${PATH}:/usr/lib/jvm/default-jvm
 
 # do all in one step
 RUN apk upgrade --update && \
